@@ -1,0 +1,83 @@
+[System.Serializable]
+public class WeatherAttribute
+{
+    public int WeatherCode;
+    public int Temperature;
+    public int Humidity;
+    public int WindSpeed;
+    public string WindDir;
+}
+
+public void ParseJSON(string jsonString) //Diekseskusi di HTTPGetWeather
+{
+    weatherAttribute = JsonUtility.FromJson<WeatherAttribute>(jsonString);
+
+    UpdateUIData();
+}
+
+void Start()
+{
+    URL = "https://localhost:7296/Weather/";
+    StartCoroutine(GetRequest(URL));
+
+    weatherList = this.GetComponent<WeatherList>();
+}
+
+public void StartGet() // Eksekusi di WeatherList
+{
+    URL = "https://localhost:7296/Weather/" + region + "/" + hour.ToString();
+
+    StartCoroutine(GetRequest(URL));
+    Debug.Log(URL);
+}
+
+IEnumerator GetRequest(string uri)
+{
+    UnityWebRequest uwr = UnityWebRequest.Get(uri);
+    yield return uwr.SendWebRequest();
+
+    if (uwr.isNetworkError)
+    {
+        Debug.Log("Error While Sending: " + uwr.error);
+    }
+    else if(!uwr.isNetworkError && uwr.isDone)
+    {
+        Debug.Log("Received: " + uwr.downloadHandler.text);
+
+        weather.ParseJSON(uwr.downloadHandler.text);
+    }
+}
+
+public void SpawnWeathers(string[] inputNameList) //Eksekusi di HTTPGetRegion
+{
+    foreach(string name in inputNameList)
+    {
+        GameObject tempWeather = Instantiate(weatherPrefab, 
+            this.transform.position, this.transform.rotation);
+        tempWeather.transform.SetParent(this.transform);
+        tempWeather.name = name;            
+        tempWeather.GetComponent<HTTPGetWeather>().region = name;
+        tempWeather.GetComponent<HTTPGetWeather>().StartGet();
+
+        weatherList.Add(tempWeather);
+    }
+
+    coorSetter.SetUI();
+}
+
+else if(!uwr.isNetworkError && uwr.isDone)
+{
+    Debug.Log("Received: " + uwr.downloadHandler.text);
+
+    receivedJson = uwr.downloadHandler.text;
+    Regex rgx = new Regex("[^A-Za-z_ ]");
+
+    nameList = receivedJson.Split(',');
+
+    for(int i = 0; i < nameList.Length; i++)
+    {
+        nameList[i] = rgx.Replace(nameList[i], "");
+    }
+
+    weatherList.SpawnWeathers(nameList);
+}
