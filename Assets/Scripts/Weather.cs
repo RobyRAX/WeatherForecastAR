@@ -5,7 +5,7 @@ using TMPro;
 
 public class Weather : MonoBehaviour
 {
-    public bool selected;
+    //public bool selected;
     public bool show;
     //public GameObject button;
 
@@ -37,7 +37,7 @@ public class Weather : MonoBehaviour
 
     void Update()
     {
-        SetWithClick();
+        //SetWithClick();
 
         //transform.LookAt(Camera.main.transform);
     }
@@ -47,16 +47,16 @@ public class Weather : MonoBehaviour
         //transform.Rotate(new Vector3(0, 180, 0));
     }
 
-    void SetWithClick()
-    {
-        if(selected)
-        {
-            if(Input.GetMouseButtonDown(1))
-            {
-                transform.localPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-            }
-        }
-    }
+    // void SetWithClick()
+    // {
+    //     if(selected)
+    //     {
+    //         if(Input.GetMouseButtonDown(1))
+    //         {
+    //             transform.localPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+    //         }
+    //     }
+    // }
 
     public void UpdateUIData()
     {

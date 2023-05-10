@@ -10,8 +10,6 @@ public class ServerControl : NetworkBehaviour
         
     }
 
-
-
     [Command(requiresAuthority = false)]
     public void Damage(int amount)
     {

@@ -9,6 +9,8 @@ public class ButtonSelector : NetworkBehaviour
 
     WeatherList weatherData;
 
+    [SerializeField] bool selected;
+
     void Start()
     {
         weatherData = FindObjectOfType<WeatherList>();
@@ -25,30 +27,19 @@ public class ButtonSelector : NetworkBehaviour
 
     public void Selection()
     {
-        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("IkonCuaca"))
+        if(selected)
         {
-            if(obj.name == this.transform.GetComponentInChildren<Text>().text)
-            {
-                if(obj.GetComponent<Weather>().selected == true)
-                {
-                    obj.GetComponent<Weather>().selected = false;
-                    childButton.SetActive(false);
-                }
-                else
-                {
-                    obj.GetComponent<Weather>().selected = true;
-                    childButton.SetActive(true);
-                }
-            }
+            selected = false;
+            childButton.SetActive(false);
         }
+        else
+        {
+            selected = true;
+            childButton.SetActive(true);
+        }        
     }
 
     [Command(requiresAuthority = false)]
-    public void SendStuff()
-    {
-        Debug.Log("COK!!");
-    }
-
     public void Show()
     {
         foreach(GameObject obj in GameObject.FindGameObjectsWithTag("IkonCuaca"))
@@ -60,8 +51,9 @@ public class ButtonSelector : NetworkBehaviour
                     obj.GetComponent<Weather>().show = false;
                     GetComponent<Image>().color = Color.white;
 
-                    obj.GetComponent<Weather>().selected = false;
+
                     childButton.SetActive(false);
+                    selected = false;
                 }
                 else
                 {

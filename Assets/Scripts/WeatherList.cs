@@ -15,16 +15,24 @@ public class WeatherList : NetworkBehaviour
 
     public GameObject button;
     GameObject buttonParent;
-    public GameObject obj;
+    public GameObject objTest;
     //int index;
 
     HTTPGetRegion getRegion;
     HTTPGetWeather getWeather;
     //public NetworkManager net;
+
+    public struct ObjMessage : NetworkMessage
+    {
+        public string name;
+        public string text;
+    }
     
 
     void Start()
     {
+        NetworkClient.RegisterHandler<ObjMessage>(OnName);
+
         coorSetter = this.GetComponent<CoordinateSetter>();
         getRegion = GameObject.FindGameObjectWithTag("DataManager").GetComponent<HTTPGetRegion>();
         getWeather = GameObject.FindGameObjectWithTag("DataManager").GetComponent<HTTPGetWeather>();
@@ -35,7 +43,7 @@ public class WeatherList : NetworkBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            SpawnStuff();
+            CmdSpawnStuff();
         }
     }
 
@@ -139,16 +147,65 @@ public class WeatherList : NetworkBehaviour
             tempButton.transform.GetComponentInChildren<Text>().text = obj.name;
 
             NetworkServer.Spawn(tempButton);
+            SendName(tempButton.name, tempButton.transform.GetComponentInChildren<Text>().text);
+
+            //CmdSpawnButton(tempButton);
         }
     }
 
     [Command(requiresAuthority = false)]
-    public void SpawnStuff()
+    public void CmdSpawnButton(GameObject button)
     {
-        GameObject clone = Instantiate(obj);
-        clone.name = "COK";
-        //NetworkServer.Spawn(clone);
+        
 
-        Debug.Log("Alhamdulillah");        
+        NetworkServer.Spawn(button);
+        //SendName(button.name, ); 
+    }
+
+    [Command(requiresAuthority = false)]
+    public void CmdSpawnStuff()
+    {
+        //SetupClient();
+
+        GameObject clone = Instantiate(objTest);
+        clone.name = $"OBJ {Random.Range(0, 100)}";
+        NetworkServer.Spawn(clone);  
+
+        //SendName(clone.name);    
+    }
+
+    // [ClientRpc]
+    // public void RpcSpawnStuff()
+    // {
+    //     GameObject clone = Instantiate(obj);
+    //     clone.name = $"OBJ {Random.Range(0, 100)}";
+    //     NetworkServer.Spawn(clone);
+
+    //     Debug.Log("Alhamdulillah");   
+    // }
+
+    public void SendName(string inputName, string inputText)
+    {
+        ObjMessage msg = new ObjMessage(){name = inputName, text = inputText};
+
+        NetworkServer.SendToAll(msg);
+    }
+
+    public void SetupClient()
+    {
+        NetworkClient.RegisterHandler<ObjMessage>(OnName);
+        //NetworkClient.Connect("localhost");
+    }
+
+    public void OnName(ObjMessage msg)
+    {
+        Debug.Log("Message " + msg);
+
+        GameObject obj = GameObject.FindObjectOfType<ButtonSelector>().gameObject;
+        if (obj.name != msg.name)
+        {
+            obj.name = msg.name;
+            obj.transform.GetComponentInChildren<Text>().text = msg.text;
+        }
     }
 }

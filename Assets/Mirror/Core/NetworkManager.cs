@@ -4,7 +4,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
-using UnityEngine.UI;
 
 namespace Mirror
 {
@@ -150,11 +149,6 @@ namespace Mirror
         //    in other words, we need this to know which mode we are running in
         //    during FinishLoadScene.
         public NetworkManagerMode mode { get; private set; }
-
-        //--------------------------------------------------------------------------------------------
-        public InputField inputAddress;
-
-        //--------------------------------------------------------------------------------------------
 
         // virtual so that inheriting classes' OnValidate() can call base.OnValidate() too
         public virtual void OnValidate()
@@ -363,16 +357,9 @@ namespace Mirror
             // NetworkClient.sendRate = clientSendRate;
         }
 
-        public void UpdateAddress()
-        {
-            networkAddress = inputAddress.text;
-        }
-
         /// <summary>Starts the client, connects it to the server with networkAddress.</summary>
         public void StartClient()
         {
-            UpdateAddress();
-
             if (NetworkClient.active)
             {
                 Debug.LogWarning("Client already started.");

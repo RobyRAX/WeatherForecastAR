@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 7428145607688532000}
   - component: {fileID: 2209636902773394882}
   - component: {fileID: 2298991653874117610}
-  - component: {fileID: 8005541483087253700}
+  - component: {fileID: 7430908953927198421}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -455,7 +455,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   childButton: {fileID: 3223475459857331318}
---- !u!114 &8005541483087253700
+--- !u!114 &7430908953927198421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
