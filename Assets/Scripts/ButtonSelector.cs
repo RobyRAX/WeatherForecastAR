@@ -11,18 +11,18 @@ public class ButtonSelector : NetworkBehaviour
 
     [SerializeField] bool selected;
 
+    public struct ColorMessage : NetworkMessage
+    {
+        public string name;
+        public bool colorOnOff;
+    }
+
     void Start()
     {
+        NetworkClient.ReplaceHandler<ColorMessage>(OnColorChange);
         weatherData = FindObjectOfType<WeatherList>();
 
         transform.SetParent(GameObject.FindGameObjectWithTag("ContentButton").transform);
-    }
-
-    public void Modify(Transform parent, string name)
-    {
-        transform.SetParent(parent);
-        gameObject.name = "Button_" + name;
-        transform.GetComponentInChildren<Text>().text = name;
     }
 
     public void Selection()
@@ -50,7 +50,7 @@ public class ButtonSelector : NetworkBehaviour
                 {
                     obj.GetComponent<Weather>().show = false;
                     GetComponent<Image>().color = Color.white;
-
+                    SendColor(obj.name, obj.GetComponent<Weather>().show);
 
                     childButton.SetActive(false);
                     selected = false;
@@ -61,12 +61,44 @@ public class ButtonSelector : NetworkBehaviour
                     {
                         obj.GetComponent<Weather>().show = true;
                         GetComponent<Image>().color = Color.green;
+
+                        SendColor(obj.name, obj.GetComponent<Weather>().show);
                     }
                     
                 }
 
                 weatherData.UpdateShowHide();
                 weatherData.UpdatePos();
+            }
+        }
+    }
+
+    public void SendColor(string inputName, bool inputColor)
+    {
+        ColorMessage msg = new ColorMessage(){name = inputName, colorOnOff = inputColor};
+
+        NetworkServer.SendToAll(msg);
+    }
+
+    public void OnColorChange(ColorMessage msg)
+    {
+        Debug.Log("ColorMessage " + msg.name + " - " + msg.colorOnOff);
+
+        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("ButtonCuaca"))
+        {
+            if(obj.name == "Button_" + msg.name)
+            {
+                if(msg.colorOnOff)
+                {
+                    obj.GetComponent<Image>().color = Color.green;
+                    obj.GetComponent<ButtonSelector>().selected = true;
+                }                  
+                else
+                {
+                    obj.GetComponent<Image>().color = Color.white;
+                    obj.transform.GetChild(1).gameObject.SetActive(false);
+                    obj.GetComponent<ButtonSelector>().selected = false;
+                }                  
             }
         }
     }

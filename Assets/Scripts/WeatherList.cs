@@ -43,7 +43,7 @@ public class WeatherList : NetworkBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            CmdSpawnStuff();
+            //CmdSpawnStuff();
         }
     }
 
@@ -153,26 +153,26 @@ public class WeatherList : NetworkBehaviour
         }
     }
 
-    [Command(requiresAuthority = false)]
-    public void CmdSpawnButton(GameObject button)
-    {
+    // [Command(requiresAuthority = false)]
+    // public void CmdSpawnButton(GameObject button)
+    // {
         
 
-        NetworkServer.Spawn(button);
-        //SendName(button.name, ); 
-    }
+    //     NetworkServer.Spawn(button);
+    //     //SendName(button.name, ); 
+    // }
 
-    [Command(requiresAuthority = false)]
-    public void CmdSpawnStuff()
-    {
-        //SetupClient();
+    // [Command(requiresAuthority = false)]
+    // public void CmdSpawnStuff()
+    // {
+    //     //SetupClient();
 
-        GameObject clone = Instantiate(objTest);
-        clone.name = $"OBJ {Random.Range(0, 100)}";
-        NetworkServer.Spawn(clone);  
+    //     GameObject clone = Instantiate(objTest);
+    //     clone.name = $"OBJ {Random.Range(0, 100)}";
+    //     NetworkServer.Spawn(clone);  
 
-        //SendName(clone.name);    
-    }
+    //     //SendName(clone.name);    
+    // }
 
     // [ClientRpc]
     // public void RpcSpawnStuff()
@@ -191,11 +191,11 @@ public class WeatherList : NetworkBehaviour
         NetworkServer.SendToAll(msg);
     }
 
-    public void SetupClient()
-    {
-        NetworkClient.RegisterHandler<ObjMessage>(OnName);
-        //NetworkClient.Connect("localhost");
-    }
+    // public void SetupClient()
+    // {
+    //     NetworkClient.RegisterHandler<ObjMessage>(OnName);
+    //     //NetworkClient.Connect("localhost");
+    // }
 
     public void OnName(ObjMessage msg)
     {
