@@ -8,6 +8,7 @@ TagManager:
   - ButtonCuaca
   - DataManager
   - Marker
+  - ContentButton
   layers:
   - Default
   - TransparentFX
