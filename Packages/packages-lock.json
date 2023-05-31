@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.easyar.sense": {
+      "version": "file:D:/My Docs/Kuliah - PENS/TA/Penelitian Pak Zikky/EasyAR/EasyARSenseUnityPlugin_4.4.0+2424.469da7da/com.easyar.sense-4.4.0+2424.469da7da.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      }
+    },
     "com.unity.collab-proxy": {
       "version": "1.15.17",
       "depth": 0,
@@ -37,6 +45,15 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.postprocessing": {
+      "version": "3.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {

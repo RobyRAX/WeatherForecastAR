@@ -1,79 +1,79 @@
-20230410032918
-Bondowoso
-{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"10","WindDir":"WSW"}
-Bojonegoro
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Gresik
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
+20230511024630
 Jember
-{"WeatherCode":"3","Temperature":"27","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Batu
-{"WeatherCode":"45","Temperature":"23","Humidity":"95","WindSpeed":"10","WindDir":"WSW"}
-Bangkalan
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Jombang
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
+{"WeatherCode":"1","Temperature":"24","Humidity":"90","WindSpeed":"2","WindDir":"E"}
+Gresik
+{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"E"}
 Banyuwangi
-{"WeatherCode":"1","Temperature":"26","Humidity":"80","WindSpeed":"10","WindDir":"W"}
-Kabupaten Malang
-{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"10","WindDir":"SW"}
-Kota Pasuruan
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Kabupaten Pasuruan
-{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Kabupaten Madiun
-{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Kabupaten Blitar
-{"WeatherCode":"3","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"SW"}
+{"WeatherCode":"3","Temperature":"26","Humidity":"90","WindSpeed":"5","WindDir":"S"}
+Bojonegoro
+{"WeatherCode":"3","Temperature":"25","Humidity":"85","WindSpeed":"2","WindDir":"SE"}
+Jombang
+{"WeatherCode":"1","Temperature":"26","Humidity":"90","WindSpeed":"5","WindDir":"SE"}
+Batu
+{"WeatherCode":"45","Temperature":"19","Humidity":"95","WindSpeed":"2","WindDir":"ENE"}
+Bondowoso
+{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"5","WindDir":"SSW"}
+Bangkalan
+{"WeatherCode":"1","Temperature":"27","Humidity":"80","WindSpeed":"5","WindDir":"ESE"}
 Kabupaten Mojokerto
-{"WeatherCode":"0","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Kota Blitar
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"SW"}
-Kota Mojokerto
-{"WeatherCode":"3","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Kota Madiun
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"SW"}
-Kota Malang
-{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"10","WindDir":"WSW"}
+{"WeatherCode":"1","Temperature":"23","Humidity":"90","WindSpeed":"2","WindDir":"ESE"}
 Kota Kediri
-{"WeatherCode":"60","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Lamongan
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
+{"WeatherCode":"3","Temperature":"25","Humidity":"85","WindSpeed":"5","WindDir":"WSW"}
+Kota Madiun
+{"WeatherCode":"3","Temperature":"25","Humidity":"85","WindSpeed":"5","WindDir":"SW"}
+Kota Pasuruan
+{"WeatherCode":"1","Temperature":"27","Humidity":"80","WindSpeed":"5","WindDir":"SE"}
 Kota Probolinggo
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Nganjuk
-{"WeatherCode":"3","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Sidoarjo
-{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Ngawi
-{"WeatherCode":"60","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"SW"}
-Sampang
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Kabupaten Probolinggo
-{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
+{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"5","WindDir":"SSE"}
+Kabupaten Madiun
+{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"2","WindDir":"SSW"}
+Kabupaten Blitar
+{"WeatherCode":"1","Temperature":"25","Humidity":"90","WindSpeed":"2","WindDir":"NNW"}
+Lamongan
+{"WeatherCode":"1","Temperature":"26","Humidity":"80","WindSpeed":"5","WindDir":"E"}
+Lumajang
+{"WeatherCode":"3","Temperature":"26","Humidity":"90","WindSpeed":"5","WindDir":"WNW"}
+Pacitan
+{"WeatherCode":"60","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"E"}
+Magetan
+{"WeatherCode":"1","Temperature":"24","Humidity":"90","WindSpeed":"5","WindDir":"W"}
+Kabupaten Kediri
+{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"2","WindDir":"SSW"}
+Trenggalek
+{"WeatherCode":"3","Temperature":"23","Humidity":"95","WindSpeed":"2","WindDir":"SW"}
+Kabupaten Malang
+{"WeatherCode":"3","Temperature":"24","Humidity":"95","WindSpeed":"5","WindDir":"ESE"}
 Tuban
-{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Surabaya
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
+{"WeatherCode":"60","Temperature":"26","Humidity":"85","WindSpeed":"5","WindDir":"SE"}
 Pamekasan
-{"WeatherCode":"3","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"WSW"}
-Sumenep
-{"WeatherCode":"60","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"W"}
+{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"E"}
+Kota Blitar
+{"WeatherCode":"3","Temperature":"24","Humidity":"95","WindSpeed":"2","WindDir":"NW"}
+Kota Malang
+{"WeatherCode":"1","Temperature":"24","Humidity":"90","WindSpeed":"2","WindDir":"SW"}
+Ponorogo
+{"WeatherCode":"60","Temperature":"24","Humidity":"90","WindSpeed":"2","WindDir":"SW"}
+Kabupaten Probolinggo
+{"WeatherCode":"1","Temperature":"25","Humidity":"90","WindSpeed":"5","WindDir":"SSE"}
+Situbondo
+{"WeatherCode":"3","Temperature":"26","Humidity":"85","WindSpeed":"5","WindDir":"ENE"}
+Tulungagung
+{"WeatherCode":"3","Temperature":"25","Humidity":"90","WindSpeed":"5","WindDir":"WNW"}
+Kabupaten Pasuruan
+{"WeatherCode":"1","Temperature":"24","Humidity":"90","WindSpeed":"2","WindDir":"SW"}
+Kota Mojokerto
+{"WeatherCode":"1","Temperature":"26","Humidity":"85","WindSpeed":"5","WindDir":"E"}
+Nganjuk
+{"WeatherCode":"3","Temperature":"24","Humidity":"90","WindSpeed":"2","WindDir":"SSW"}
 Pelabuhan Surabaya
 {"WeatherCode":null,"Temperature":null,"Humidity":null,"WindSpeed":null,"WindDir":null}
-Ponorogo
-{"WeatherCode":"1","Temperature":"27","Humidity":"80","WindSpeed":"10","WindDir":"SW"}
-Pacitan
-{"WeatherCode":"1","Temperature":"26","Humidity":"90","WindSpeed":"10","WindDir":"SW"}
-Kabupaten Kediri
-{"WeatherCode":"1","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
-Trenggalek
-{"WeatherCode":"1","Temperature":"25","Humidity":"90","WindSpeed":"10","WindDir":"SW"}
-Tulungagung
-{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"SW"}
-Magetan
-{"WeatherCode":"60","Temperature":"27","Humidity":"85","WindSpeed":"10","WindDir":"SW"}
-Situbondo
-{"WeatherCode":"3","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"W"}
-Lumajang
-{"WeatherCode":"3","Temperature":"26","Humidity":"85","WindSpeed":"10","WindDir":"WSW"}
+Ngawi
+{"WeatherCode":"60","Temperature":"25","Humidity":"90","WindSpeed":"5","WindDir":"S"}
+Surabaya
+{"WeatherCode":"1","Temperature":"29","Humidity":"80","WindSpeed":"5","WindDir":"E"}
+Sumenep
+{"WeatherCode":"1","Temperature":"27","Humidity":"80","WindSpeed":"5","WindDir":"E"}
+Sidoarjo
+{"WeatherCode":"1","Temperature":"28","Humidity":"80","WindSpeed":"10","WindDir":"ESE"}
+Sampang
+{"WeatherCode":"0","Temperature":"27","Humidity":"85","WindSpeed":"5","WindDir":"E"}

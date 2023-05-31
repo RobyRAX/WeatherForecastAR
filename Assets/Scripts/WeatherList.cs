@@ -90,12 +90,12 @@ public class WeatherList : NetworkBehaviour
         }
     }
 
-    public void RunSpawnWeathers()
+    public void RunSpawnWeathers() //Eksekusi di Button
     {
         SpawnWeathers(getRegion.nameList);
     }
 
-    public void SpawnWeathers(string[] inputNameList) //Eksekusi di HTTPGetRegion
+    public void SpawnWeathers(string[] inputNameList) 
     {
         // if(isServer)
         // {
@@ -189,6 +189,7 @@ public class WeatherList : NetworkBehaviour
         ObjMessage msg = new ObjMessage(){name = inputName, text = inputText};
 
         NetworkServer.SendToAll(msg);
+        Debug.Log("Message : " + msg.text);
     }
 
     // public void SetupClient()
@@ -199,7 +200,7 @@ public class WeatherList : NetworkBehaviour
 
     public void OnName(ObjMessage msg)
     {
-        Debug.Log("Message " + msg);
+        //Debug.Log("Message : " + msg);
 
         GameObject obj = GameObject.FindObjectOfType<ButtonSelector>().gameObject;
         if (obj.name != msg.name)

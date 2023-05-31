@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ButtonPanel : MonoBehaviour
 {
-    bool active = true;
+    [SerializeField] bool active = true;
+    public GameObject buttonPanel;
 
     void Update()
     {
@@ -12,12 +13,12 @@ public class ButtonPanel : MonoBehaviour
         {
             if(active)
             {
-                gameObject.SetActive(false);
+                buttonPanel.SetActive(false);
                 active = false;
             }
             else
             {
-                gameObject.SetActive(true);
+                buttonPanel.SetActive(true);
                 active = true;
             }
         }

@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Samples/EasyAR Sense/4.4.0+2424.469da7da/ObjectSensing ImageTracking_Targets/Scenes/ImageTracking_Targets.unity
-    guid: c5633c5dd1eaddf4ab5995534d042779
-  - enabled: 0
-    path: Assets/Samples/EasyAR Sense/4.4.0+2424.469da7da/WorldSensing SurfaceTracking/Scenes/SurfaceTracking.unity
-    guid: 29d9671db051e914eabc94c5ff47ece2
-  - enabled: 0
     path: Assets/Scenes/TestAndroidRemote.unity
     guid: 34d7e70377fe4e9448f5c748de7b35cd
   - enabled: 1

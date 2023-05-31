@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "com.easyar.sense": "file:D:/My Docs/Kuliah - PENS/TA/Penelitian Pak Zikky/EasyAR/EasyARSenseUnityPlugin_4.4.0+2424.469da7da/com.easyar.sense-4.4.0+2424.469da7da.tgz",
     "com.unity.collab-proxy": "1.15.17",
     "com.unity.ide.visualstudio": "2.0.15",
     "com.unity.ide.vscode": "1.2.5",
+    "com.unity.postprocessing": "3.2.2",
     "com.unity.render-pipelines.universal": "10.9.0",
     "com.unity.test-framework": "1.1.31",
     "com.unity.textmeshpro": "3.0.6",
