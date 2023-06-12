@@ -12,9 +12,9 @@ public class HTTPGetRegion : MonoBehaviour
     //string receivedJson;
     public string[] nameList;
 
-    public Text textNameList;
+    //public Text textNameList;
 
-    [HideInInspector] public string textFileName;
+    [HideInInspector] public string textFileName = "LocalData/NameList.txt";
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class HTTPGetRegion : MonoBehaviour
 
         textFileName = "LocalData/NameList.txt";
 
-        UpdateUI();
+        //UpdateUI();
     }
 
     public void StartGet()
@@ -36,13 +36,13 @@ public class HTTPGetRegion : MonoBehaviour
     {
         ParseJSON(File.ReadAllText(textFileName));
 
-        UpdateUI();
+        //UpdateUI();
     }
 
-    public void UpdateUI()
-    {
-        textNameList.text = File.ReadAllText(textFileName);
-    }
+    // public void UpdateUI()
+    // {
+    //     textNameList.text = File.ReadAllText(textFileName);
+    // }
 
     void ParseJSON(string jsonString)
     {
@@ -73,7 +73,7 @@ public class HTTPGetRegion : MonoBehaviour
             
             ParseJSON(uwr.downloadHandler.text);
             
-            UpdateUI();
+            //UpdateUI();
 
             //weatherList.SpawnWeathers(nameList);
         }

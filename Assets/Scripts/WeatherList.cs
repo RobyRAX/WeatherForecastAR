@@ -58,6 +58,7 @@ public class WeatherList : NetworkBehaviour
                     weather.transform.GetChild(0).gameObject.SetActive(true);
                     weather.transform.GetChild(1).gameObject.SetActive(true);
                     weather.transform.GetChild(2).gameObject.SetActive(true);
+                    //weather.transform.GetChild(3).gameObject.SetActive(true);
 
                     if(shownWeather.Contains(weather))
                     {
@@ -73,6 +74,7 @@ public class WeatherList : NetworkBehaviour
                     weather.transform.GetChild(0).gameObject.SetActive(false);
                     weather.transform.GetChild(1).gameObject.SetActive(false);
                     weather.transform.GetChild(2).gameObject.SetActive(false);
+                    //weather.transform.GetChild(3).gameObject.SetActive(false);
 
                     shownWeather.Remove(weather);
                 }

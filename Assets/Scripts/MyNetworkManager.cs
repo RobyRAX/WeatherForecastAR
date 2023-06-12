@@ -51,5 +51,6 @@ public class MyNetworkManager : NetworkManager
         base.OnServerConnect(conn);
 
         panelServerClient.SetActive(false);
+        panelDownload.SetActive(true);
     }
 }

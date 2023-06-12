@@ -29,7 +29,7 @@ public class HTTPGetWeather : MonoBehaviour
 
         textFileName = "LocalData/WeatherDetails.txt";
 
-        UpdateUI();
+        //UpdateUI();
     }
 
     void Update()
@@ -39,7 +39,7 @@ public class HTTPGetWeather : MonoBehaviour
             if(!textWritten)
             {
                 File.WriteAllLines(textFileName, weatherDetails);
-                UpdateUI();
+                //UpdateUI();
 
                 textWritten = true;
             }
@@ -66,10 +66,10 @@ public class HTTPGetWeather : MonoBehaviour
         weatherDetails.AddRange(savedData);
     }
 
-    public void UpdateUI()
-    {       
-        textWeatherDetails.text = File.ReadAllText(textFileName);
-    }
+    // public void UpdateUI()
+    // {       
+    //     textWeatherDetails.text = File.ReadAllText(textFileName);
+    // }
 
     IEnumerator GetWeather(string uri, string name)
     {

@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Components", "Mirror
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TextMeshPro", "Unity.TextMeshPro.csproj", "{a703a207-86b2-50ee-aa9e-180c76fc5ec9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{07f3db00-24bf-2cf9-da01-68f3ce8c597c}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Timeline.csproj", "{e70bf0d9-5b69-fdf9-11ab-774c9fbf0e26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAR.Sense", "EasyAR.Sense.csproj", "{579a044e-e97c-f7c8-bbef-dea27a80a8b0}"
@@ -32,8 +34,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.csproj", "{1677b25c-6e27-f81b-7aa2-7a0bfd811527}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.csproj", "{d877d3bc-9457-4586-9e4e-1e092472da15}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{07f3db00-24bf-2cf9-da01-68f3ce8c597c}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.ShaderLibrary", "Unity.RenderPipelines.Core.ShaderLibrary.csproj", "{46e838e0-5218-48dc-f9cf-49566c8155b7}"
 EndProject
@@ -114,6 +114,8 @@ Global
 		{281e159e-8877-8005-4194-c9cf1b7ca50e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a703a207-86b2-50ee-aa9e-180c76fc5ec9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a703a207-86b2-50ee-aa9e-180c76fc5ec9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07f3db00-24bf-2cf9-da01-68f3ce8c597c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07f3db00-24bf-2cf9-da01-68f3ce8c597c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e70bf0d9-5b69-fdf9-11ab-774c9fbf0e26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e70bf0d9-5b69-fdf9-11ab-774c9fbf0e26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{579a044e-e97c-f7c8-bbef-dea27a80a8b0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -124,8 +126,6 @@ Global
 		{1677b25c-6e27-f81b-7aa2-7a0bfd811527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d877d3bc-9457-4586-9e4e-1e092472da15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d877d3bc-9457-4586-9e4e-1e092472da15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07f3db00-24bf-2cf9-da01-68f3ce8c597c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07f3db00-24bf-2cf9-da01-68f3ce8c597c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46e838e0-5218-48dc-f9cf-49566c8155b7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46e838e0-5218-48dc-f9cf-49566c8155b7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b6153763-2b27-0617-00ab-9e60b0991f3b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
